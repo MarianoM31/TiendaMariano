@@ -1,0 +1,73 @@
+#contenedorTitulo {
+    text-align: center;
+    color:  dodgerblue;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.parrafo {
+    text-align: center;
+    color:  var;
+    margin: 20px;
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.6;
+}
+.parrafo2 {
+    text-align: center;
+    color: cornflowerblue;
+    margin: 20px;
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+}
+.ultima-linea {
+    text-align: center;
+    color: #555;
+    margin: 20px;
+    font-family: 'Courier New', monospace;
+    font-style: italic;
+}
+
+.navegacion {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: dodgerblue;
+    margin: 0 10px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+.navegacion a:hover {
+    color: darkblue;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.imagen-catalogo {
+    max-width: 80%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+.lista-vehiculos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-vehiculos li {
+    margin-bottom: 10px;
+}
+
+.vehiculo-nombre {
+    font-weight: bold;
+    color: darkblue;
+}

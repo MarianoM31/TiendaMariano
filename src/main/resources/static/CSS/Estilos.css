@@ -1,8 +1,12 @@
 #contenedorTitulo {
-    text-align: center;
-    color:  dodgerblue;
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
+     text-align: center;
+     color: purple;
+     border: 2px solid red;
+     width: 50%;
+     /*Centrar un Div*/
+    margin: 0 auto;
+    background-color: bisque;
+
 }
 
 .parrafo {
@@ -14,7 +18,7 @@
 }
 .parrafo2 {
     text-align: center;
-    color: cornflowerblue;
+    color:  aqua;
     margin: 20px;
     font-family: 'Verdana', sans-serif;
     line-height: 1.6;
@@ -70,4 +74,56 @@ img {
 .vehiculo-nombre {
     font-weight: bold;
     color: darkblue;
+}
+.span {
+    color:  blueviolet;
+    font-family: 'Georgia', serif;    
+}
+.parrafo3Secundario {
+    font-size: 22px;
+    color: navy;
+}
+
+.notaImportante {
+    color: red;
+}
+
+h1, h2, h3 {
+    color: aqua;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 25px;
+}
+h3 {
+    font-size: 1em;
+    
+}
+a:link {
+    color: chocolate;
+    font-size: 20px;    
+}
+a {
+    border:2px solid navy;
+    background-color: darkblue;
+    color: aliceblue;
+    border-radius:20px;
+    padding: 5px;
+    margin: 10px;
+    
+}
+a:visited{
+    color: chartreuse;
+}
+a:hover {
+    background: green;
+    color: white;
+}
+a:active {
+     background: purple;
+    color: white;
 }

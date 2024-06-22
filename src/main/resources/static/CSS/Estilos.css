@@ -1,129 +1,70 @@
-#contenedorTitulo {
-     text-align: center;
-     color: purple;
-     border: 2px solid red;
-     width: 50%;
-     /*Centrar un Div*/
-    margin: 0 auto;
-    background-color: bisque;
-
+#encabezado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    background-color: #00cccc;
+    color: white;
 }
-
-.parrafo {
+#menu{
+    position: absolute;
+    top: 8%;
+    left: 0;
+    height: 4%;
+    width: 100%;
+    background-color: aquamarine;
+    color: black;
+}
+#menu a:visited {
+    color:navy;
+}
+#menu a:hover {
+    background-color: green;
+}
+#barraLateral{
+    position: absolute;
+    top: 12%;
+    left: 0;
+    height: 81%;
+    width: 20%;
+    background-color: blue;
+    color: black;
+}
+#contenido{
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    height: 81%;
+    width: 80%;
+    background-color: coral;
+    color: black;
+    overflow:auto;
+}
+#piePagina{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 7%;
+    width: 100%;
+    background-color: #66ff00;
+    color: black;
     text-align: center;
-    color:  var;
-    margin: 20px;
-    font-family: 'Verdana', sans-serif;
-    line-height: 1.6;
 }
-.parrafo2 {
-    text-align: center;
-    color:  aqua;
-    margin: 20px;
-    font-family: 'Verdana', sans-serif;
-    line-height: 1.6;
-    font-size: 18px;
-}
-.ultima-linea {
-    text-align: center;
-    color: #555;
-    margin: 20px;
-    font-family: 'Courier New', monospace;
-    font-style: italic;
+#encabezadoTabla {
+    font-size: 20px;
+    color: white;
+    background-color: cadetblue;
 }
 
-.navegacion {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.navegacion a {
-    text-decoration: none;
-    color: dodgerblue;
-    margin: 0 10px;
-    font-family: 'Georgia', serif;
-    font-weight: bold;
-}
-
-.navegacion a:hover {
-    color: darkblue;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-}
-
-.imagen-catalogo {
-    max-width: 80%;
-    height: auto;
-    margin: 20px auto;
-    display: block;
-}
-.lista-vehiculos {
-    list-style-type: none;
-    padding: 0;
-}
-
-.lista-vehiculos li {
-    margin-bottom: 10px;
-}
-
-.vehiculo-nombre {
-    font-weight: bold;
-    color: darkblue;
-}
-.span {
-    color:  blueviolet;
-    font-family: 'Georgia', serif;    
-}
-.parrafo3Secundario {
-    font-size: 22px;
-    color: navy;
-}
-
-.notaImportante {
-    color: red;
-}
-
-h1, h2, h3 {
-    color: aqua;
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
+#tablaResumen tr {
     font-size: 25px;
 }
-h3 {
-    font-size: 1em;
-    
+
+#tablaResumen tr:nth-child(odd) {
+    background-color: gold;
 }
-a:link {
-    color: chocolate;
-    font-size: 20px;    
-}
-a {
-    border:2px solid navy;
-    background-color: darkblue;
-    color: aliceblue;
-    border-radius:20px;
-    padding: 5px;
-    margin: 10px;
-    
-}
-a:visited{
-    color: chartreuse;
-}
-a:hover {
-    background: green;
-    color: white;
-}
-a:active {
-     background: purple;
-    color: white;
+
+#tablaResumen tr:nth-child(even) {
+    background-color: coral;
 }

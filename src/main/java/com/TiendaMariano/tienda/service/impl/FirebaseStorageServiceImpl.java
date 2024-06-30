@@ -1,6 +1,6 @@
-package com.TiendaMariano.service.impl;
+package com.TiendaMariano.tienda.service.impl;
 
-import com.TiendaMariano.service.FirebaseStorageService;
+import com.TiendaMariano.tienda.service.FirebaseStorageService;
 import com.google.auth.Credentials;
 import com.google.auth.ServiceAccountSigner;
 import com.google.auth.oauth2.GoogleCredentials;

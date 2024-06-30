@@ -1,7 +1,9 @@
-package com.TiendaMariano.service;
+package com.TiendaMariano.tienda.service;
 
-import com.TiendaMariano.domain.Categoria;
+import com.TiendaMariano.tienda.domain.Categoria;
 import java.util.List;
+
+
 
 public interface CategoriaService {
     

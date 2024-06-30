@@ -1,4 +1,4 @@
-package com.TiendaMariano.service;
+package com.TiendaMariano.tienda.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;

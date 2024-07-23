@@ -28,7 +28,7 @@ public class ProductoController {
     
     @Autowired
     private CategoriaService categoriaService;
-
+    
     @Autowired
     private FirebaseStorageServiceImpl firebaseStorageService;
 
@@ -76,7 +76,6 @@ public class ProductoController {
         
         List<Categoria> categorias = categoriaService.getCategorias(true);
         model.addAttribute("categorias", categorias);
-        
         return "/producto/modifica";
     }
 }

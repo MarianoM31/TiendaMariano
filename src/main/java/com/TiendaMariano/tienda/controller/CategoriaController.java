@@ -22,7 +22,7 @@ public class CategoriaController {
 
     @Autowired
     private CategoriaService categoriaService;
-
+    
     @Autowired
     private FirebaseStorageServiceImpl firebaseStorageService;
 

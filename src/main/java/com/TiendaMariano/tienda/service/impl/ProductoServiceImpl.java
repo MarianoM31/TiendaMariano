@@ -15,7 +15,7 @@ public class ProductoServiceImpl implements ProductoService {
     private ProductoDao productoDao;
 
     @Override
-    @Transactional(readOnly = true)
+    @Transactional(readOnly = true) //permite controlar la transaccionalidad de los metodos, una transaccion en BD lo q hace es asegurarse que se permitan todas las transacciones
     public List<Producto> getProductos(boolean activos) {
         var lista = productoDao.findAll();
         if (activos) {
@@ -41,22 +41,35 @@ public class ProductoServiceImpl implements ProductoService {
     public void delete(Producto producto) {
         productoDao.delete(producto);
     }
-    // Lista de productos con precio entre ordendados por descripción ConsultaAmpliada
 
     @Override
     @Transactional(readOnly = true)
     public List<Producto> findByPrecioBetweenOrderByDescripcion(double precioInf, double precioSup) {
         return productoDao.findByPrecioBetweenOrderByDescripcion(precioInf, precioSup);
     }
-    
-     @Override
-    @Transactional(readOnly=true)    
+
+    @Override
+    @Transactional(readOnly = true)
     public List<Producto> metodoJPQL(double precioInf, double precioSup) {
         return productoDao.metodoJPQL(precioInf, precioSup);
     }
+
     @Override
-    @Transactional(readOnly=true)    
+    @Transactional(readOnly = true)
     public List<Producto> metodoNativo(double precioInf, double precioSup) {
         return productoDao.metodoNativo(precioInf, precioSup);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Producto> findByExistenciasBetweenOrderByDescripcion(int existenciasMin, int existenciasMax) {
+        return productoDao.findByExistenciasBetweenOrderByDescripcion(existenciasMin, existenciasMax);
+    }
+    
+    // Implementación del nuevo método para buscar por cantidad de existencias usando SQL nativo
+    @Override
+    @Transactional(readOnly = true)
+    public List<Producto> findByExistenciasNativo(int existenciasMin, int existenciasMax) {
+        return productoDao.findByExistenciasNativo(existenciasMin, existenciasMax);
     }
 }
